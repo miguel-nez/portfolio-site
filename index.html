@@ -26,8 +26,8 @@
 
 <body>
 
-    <header> <!-- Hero & Navigation section (new) -->
-        <div> <!-- Hero -->
+    <header id="header"> <!-- Hero & Navigation section (new) -->
+        <div id="hero"> <!-- Hero -->
             <div>
                 <h3>
                     <a href="index.html">Miguel Núñez Núñez</a>
@@ -37,23 +37,23 @@
                 </h3>
             </div>
         </div>
-        <div> <!-- Navigation -->
+        <div id="nav"> <!-- Navigation -->
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>            
         </div>
     </header>
   
-    <main>  <!-- Work section -->
+    <main id="main">  <!-- Work section -->
         <div>  <!-- Whole section block -->
-            <div>  <!-- Wrapper -->
+            <div id="wrapper">  <!-- Wrapper -->
                 <h1>Work</h1>
-                <div>   <!-- Simplex project -->
-                    <div>  <!-- Project title raw -->
+                <div id="project">   <!-- Simplex project -->
+                    <div id="project-head">  <!-- Project title raw -->
                         <div>  <!-- Column 1 -->
                             <h3>Simplex / Expert app for immigrants in Germany, 2021</h3>
                         </div>
@@ -75,12 +75,12 @@
                         </div>
                         <div>  <!-- Column 2 -->
                             <p>Immersion project within CareerFoundry UX Design Course. Simplex is an expert App aimed to improve the integration of immigrants in Germany by offering multilingual bureaucratic assistance and a trustworthy community.</p>
-                            <p><a href="simplex.html">Link to project</a></p>
+                            <a href="simplex.html" class="button">Link to project</a>
                         </div>
                     </div>
                 </div>
-                <div>  <!-- TEDch me! project -->
-                    <div>  <!-- Project title raw -->
+                <div id="project">  <!-- TEDch me! project -->
+                    <div id="project-head">  <!-- Project title raw -->
                         <div>  <!-- Column 1 -->
                             <h3>TEDch Me! / Advanced English vocabulary app</h3>
                         </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div>  <!-- Column 2 -->
                             <p>Intro project within CareerFoundry UX Design Course. TEDch me! offers a different approach to an English vocabulary app for high level users by providing categorized TEDTalks for the discovering phase and online challanges for retaining.</p>
-                            <p><a href="#">Link to project</a></p>
+                            <p><a href="#" class="button">Link to project</a></p>
                         </div>
                     </div>
                 </div>
@@ -109,14 +109,14 @@
         </div>
     </main>
 
-<!-- This will be a one-line footer, no social media -->
+<!-- Footer -->
 
-    <footer id="contact">
+    <footer id="footer">
         <div>
-            <h3>Let's work together</h3>
+            <h3>Let's work together -></h3>
         </div>
         <div>
-            <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query">miguel@gmail.com</a>
+            <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query" class="button">miguel@gmail.com</a>
         </div>
         <div>
             <p>©Miguel Núñez Núñez</p>

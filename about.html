@@ -26,61 +26,63 @@
 
 <body id="about">
     
-    <header id="header"> <!-- Hero & Navigation section (new) -->
-        <div id="hero"> <!-- Hero -->
-            <div>
-                <h3>
-                    <a href="index.html">Miguel Núñez Núñez</a>
-                    <br>
-                    <br>
-                    Product designer based in Cologne. I do UX, UI and basic frontend development.
-                </h3>
+    <header class="header">
+        <div class="col-1">
+
+            <!-- Hero -->
+            <div id="hero">
+                <div class="hero">
+                    <h3>
+                        <a href="index.html">/// Núñez Núñez /// 20212022 /// UXUI /// </a>
+                    </h3>
+                    <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend development.</p>
+                </div>
             </div>
-        </div>
-        <div id="nav"> <!-- Navigation -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </nav>            
+
+            <!-- Navigation -->
+            <div id="nav">
+                <nav class="nav">
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>            
+            </div>
         </div>
     </header>
     
-    <main>
-        <div> <!-- Title block -->
-            <div> <!-- Wrapper -->
-                <h1>About</h1>
-            </div>
-        </div>
-        <!-- No picture included -->
-        <div> <!-- Copy block -->
-            <div> <!-- Wrapper -->
-                <div> <!-- Column 1 -->
-                    <h2>My Story</h2>
+    <main class="main">
+        <div class="container row">
+            <div class="col-2">
+
+                <!-- Left Column -->
+                <div>
+                    <br>
+                    <br>
                     <p>I am a graduate in Intercultural Studies, German-Spanish focus. I previously did three years of Architecture and found that, in order to have a bigger impact on people’s lives, I needed to deepen my understanding of their vital experiences.</p>
-                    <p>I am committed to creating a fairer, care-taking society. I want to understand privilege so I can contribute to reduce inequality: I believe in the potential of digital products as a tool to achieve this, so that’s why I chose to explore the path of UX Design.</p>
-                    <a href="files/cv.pdf" target="_blank" class="button">Download my resume</a>
+                    <p>I am committed to creating a fairer, care-taking society. I want to understand privilege so I can contribute to reduce inequality: I believe in the potential of digital products as a tool to achieve this, so that’s why I chose to dive in the world of UX Design.</p>
+                    <br>
+                    <a href="files/cv.pdf" target="_blank" class="button" id="resume">Download my resume</a>
                 </div>
-                <div> <!-- Column 2 -->
-                    <h2>Skills & Tools</h2>
-                    <div> <!-- Wrapper -->
-                        <div> <!-- Raw 1 -->
-                            <h3>Skills</h3>
-                            <ul>
-                                <li>UX Research, Information Architecture, UX and UI Design, Interaction Design</li>
-                                <li>Python, HTML, CSS, Javascript</li>
-                            </ul>
-                        </div>
-                        <div> <!-- Raw 2 -->
-                            <h3>Tools</h3>
-                            <ul>
-                                <li>Adobe Photoshop, Illustrator, InDesign, After Effects</li>
-                                <li>Figma, Sketch, Adobe XD, InVision, Marvel</li>
-                            </ul>
-                        </div>
+
+                <!-- Right Column -->
+                <div>
+                    <div class="skills">
+                        <h4>/Skills</h4>
+                        <ul>
+                            <li>UX Research, Information Architecture, UX and UI Design, Interaction Design</li>
+                            <li>Python, HTML, CSS, Javascript</li>
+                        </ul>
                     </div>
+                    <div class="tools">
+                        <h4>/Tools</h4>
+                        <ul>
+                            <li>Adobe Photoshop, Illustrator, InDesign, After Effects</li>
+                            <li>Figma, Sketch, Adobe XD, InVision, Marvel</li>
+                        </ul>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -88,14 +90,16 @@
     </main>
 
     <footer id="footer">
-        <div>
-            <h3>Let's work together -></h3>
-        </div>
-        <div>
-            <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query" class="button">miguel@gmail.com</a>
-        </div>
-        <div>
-            <p>©Miguel Núñez Núñez</p>
+        <div class="container">
+            <div class="footer-element">
+                <p>Let's work together  >></p>
+            </div>
+            <div class="footer-element">
+                <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query">miguel@gmail.com</a>
+            </div>
+            <div class="footer-element">
+                <p>©Miguel Núñez Núñez</p>
+            </div>
         </div>
     </footer>
 

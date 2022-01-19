@@ -13,6 +13,7 @@ body {
     font-family: 'Arial-narrow', sans-serif;
     font-size: 15px;
     font-weight: 100;
+    color: black;
 }
 
 /* Images */
@@ -24,6 +25,7 @@ img {
 h1, h2, h3, h4 {
     line-height: 1.4;
     font-weight: 300;
+    margin: 0px;
 }
 h1 {
     font-size: 2.2em;
@@ -34,7 +36,11 @@ h2 {
     margin-bottom: 0;
 }
 h3 {
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
+}
+h4 {
+    font-weight: 400;
 }
 
 p {
@@ -43,11 +49,13 @@ p {
 
 /* Links */
 a {
-    color: black;
+    color: inherit;
     text-decoration: none;
+    transition: color 0.2s;
 }
-a:visited {
-    color: black;
+
+a:active {
+    color: blue;
 }
 a:hover {
     font-weight: 300;
@@ -66,7 +74,7 @@ a:focus {
     color: black;
     padding: 10px;
     border: 1px solid black;
-    transition: 0.2 opacity;
+    transition: color 0.5s
 }
 .button:hover {
     font-weight: 400;
@@ -76,49 +84,119 @@ a:focus {
 }
 
 /* Layout styling */
-
-#about .main h3 {
-    margin-bottom: 0px;
+.container {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
 }
-
-#about .main h4 {
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
 #simplex main {
     padding-top: 60px;
 }
 
+
+
+/* Navigation */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #c7c7c7;
+    padding: 10px 10px 0 10px;
+}
+
+
+
+.hero {
+    position: relative;
+    top: 0px;
+    margin: 0;
+    width: 100%;
+}
+.nav {
+    position:relative;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 7px 0;
+    margin: 0 auto;
+    display: inline-flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+nav > ul > li > a {
+    text-transform: uppercase;
+}
+
+/* Work column layout */
+[class*="colp-"] {
+    float: left;
+}
+
+.colp-sm-2 {
+    width: 100%;
+}
+
+/* Project layout */
+.project-head {
+    padding: 10px 0
+}
+.project-text {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#project3{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* About layout */
+#about main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about main ul li {
+    margin: 5px 0;
+}
+
+.aboutme {
+    padding: 40px 10px 0 10px;
+}
+
+.resume {
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+.skills-tools {
+    padding: 40px 10px 40px 10px;
+}
+
+
+/* Footer */
+.contact {
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+}
+
+#footer a {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+
+
+/* ==============================
+Small devices (639px and smaller)
+================================= */
+
 @media only screen and (max-width: 639px){
-    .container {
-        max-width: 1200px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .header {
-        position: fixed;
-        width: 100%;
-        background-color: #c7c7c7;
-        padding: 10px 10px 0 10px;
-    }
-
-    .hero {
-        position: relative;
-        top: 0px;
-        padding: 0 0 7px 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    .nav {
-        position:relative;
-        padding: 0 0 10px 0;
-        border-bottom: 1px solid black;
-    }
-
     #work main {
         padding-top: 50px;
     }
@@ -146,51 +224,17 @@ a:focus {
         position: relative;
         bottom: 0px;
     }
+
+    .copyright {
+        text-align: center;
+    }
+    
 }
 
-/* Navigation */
 
-ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0 auto;
-}
-
-nav ul li {
-    display: inline-block;
-    padding-right: 30px;
-}
-
-nav > ul > li > a {
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-
-/* Work layout */
-
-
-#project1, #project2 {
-    border-bottom: 1px solid black;
-    padding: 10px 0 20px 0
-}
-
-.project-head {
-    margin: 0px;
-}
-
-.project-name {
-    text-transform: uppercase;
-    margin: 10px 0;
-}
-
-.project-name::after {
-    content: " ** ";
-}
-
-.project-text {
-    font-style: italic;
-}
+/* ==============================
+Medium/Large devices (640px and larger)
+================================= */
 
 
 @media only screen and (min-width: 640px) {
@@ -199,6 +243,13 @@ nav > ul > li > a {
         max-width: 1200px;
         padding: 0 10px;
         display: block;
+        margin-top: 285px;
+    }
+
+    .row {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
     }
 
     .desktop {
@@ -208,19 +259,19 @@ nav > ul > li > a {
         display: none;
     }
 
-
     /* Columns */
     .col-1 {
-        width: 180px;
+        margin-top: 70px;
+        width: 210px;
+        float: left;
         position: fixed;
     }
 
     .col-2 {
-        position: absolute;
-        left: 200px;
-        right: 50px;
+        float: left;
+        margin-left: 210px;
         padding-bottom: 50px;
-        max-width: 600px;
+        max-width: 800px;
     }
 
     [class*="col-"] {
@@ -234,18 +285,24 @@ nav > ul > li > a {
     }
 
     /* Hero & Navigation */
+    .header {
+        all: unset;
+    }
+    .hero {
+        all: unset;
+    }
+
     .hero {
         display: inline-block;
         height: fit-content;
         padding: 0;
         margin: 10px;
-        border: 1px solid black;
         background-color: transparent;
     }
 
     .name-link {
         padding: 30px 15px 0 15px;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1.2em;
     }
 
@@ -254,57 +311,137 @@ nav > ul > li > a {
     }
 
     .nav {
-        height:fit-content;
-        padding: 10px 15px;
+        height: 100px;
+        padding: 0 15px;
         margin: 10px;
-        border: 1px solid black;
         background-color: transparent;
+        border-bottom: unset;
     }
 
-    nav > ul {
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
-        line-height: 2em;
+    .nav ul {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
     }
 
-
+    .nav ul li a {
+        text-transform: none;
+        font-style: italic;
+    }
     /* Index Project */
+
+    .colp-md-1 {
+        width: 50%;
+    }
+    .project {
+        border-bottom: 1px solid black;
+    }
+
     .project-preview {
         width: 100%;
     }
 
-    .project h3 {
-        margin: 0 0 10px 0;
+    .project .name {
+        margin: 0;
+        padding: 0;
     }
 
-    .p-row {
-        margin: 25px 0;
-        padding: 0px;
+    .project-head {
+        padding-top: 0px;
+    }
+    .project .roles {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .project .details {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .project .description {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .project h3 {
+        margin: 0
     }
 
     #work h1 {
         margin: 0px;
     }
 
+    /* About */
+
+    .aboutme {
+        padding: 20px 10px 0 0;
+        margin-top: 0;
+        border-top: 1px solid black;
+    }
+
+    .skills-tools {
+        padding: 20px 10px;
+        margin-top: 0;
+        border-top: 1px solid black;
+    }
+
+    .aboutme p {
+        margin: 0;
+    }
+
+    .resume {
+        margin-top: 40px;
+        text-align:left
+    }
+
     /* Footer */
     footer .container{
         display: flex;
-        align-items: baseline;
-        width: 100%;
+        justify-content: space-around;
+        
+        max-width: none;
+        width: 100vw;
         background-color: white;
         bottom: 0px;
         position: fixed;
     }
+    #footer p {
+        margin: 5px;
+    }
 
     .copyright {
-        justify-content: flex-end;
-        text-align: end;
+        color: #c7c7c7;
     }
 }
 
-.footer-element {
-    margin-right: 10px;
-    font-weight: 400;
+/* =======
+Animations
+======= */
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
 }
 
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    animation: 100s cloud-move-reverse infinite alternate linear;
+}

@@ -20,8 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
-
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/b0e832d0de.js" crossorigin="anonymous"></script>
 </head>
@@ -29,32 +27,46 @@
 <body id="about">
     <div class="row">
 
-        <div class="col-1">
-            <header class="header">
-
+        <header class="header">
+            <div class="col-1">
+    
                 <!-- Hero -->
-                <div class="hero">
-                    <div class="mobile">
-                        <a href="index.html">/// Núñez Núñez /// 20212022 /// UXUI /// </a>
-                    </div>
-                    <div class="desktop name-link">
+                <div id="hero">
+                    <div class="header">
+                        <div class="container mobile">
+                            <div class="navtoggle" id="myNavtoggle" class="mobile">
+                                <a href="index.html" class="myName">Núñez Núñez \/\/\ UXUI </a>  
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Work</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
+                                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                                    </ul>
+                                </nav> 
+                            </div>
+                        </div>
+                        <!-- Desktop -->
+                        <div class="desktop name-link">
                         <a href="index.html">Núñez Núñez</a>
+                        </div>
+                        <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend development.</p>
                     </div>
-                    <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend development.</p>
                 </div>
-
+    
                 <!-- Navigation -->
-                <div id="nav">
+                <div id="nav" class="desktop">
                     <nav class="nav">
                         <ul>
                             <li><a href="index.html">Work</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="#footer">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                         </ul>
                     </nav>            
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
         
         <main class="col-2">
             <div class="container">

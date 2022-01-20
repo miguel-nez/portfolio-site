@@ -101,32 +101,56 @@ a:focus {
 .header {
     position: fixed;
     width: 100%;
-    padding: 10px 10px 0 10px;
-}
-
-.hero .mobile {
-    display: block;
-    padding: 5px 10px;
-    margin: -10px -10px 0 -10px;
+    height: 40px;
+    padding: 0;
     background-color: white;
 }
 
-.nav {
-    background-color: #c7c7c7;
-    border-bottom: 1px solid black;
+.myName {
+    position: relative;
+    top: 1px;
+    font-weight: 400;
+    font-size: 16px;
 }
 nav ul {
     list-style-type: none;
-    padding: 7px 0;
+    padding: 0;
     margin: 0 auto;
     display: inline-flex;
-    width: 70%;
+    flex-direction: column;
     justify-content: space-between;
-}
-nav > ul > li > a {
-    text-transform: uppercase;
+    width: 100vw;
 }
 
+nav ul li {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle li .icon {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 16px;
+}
+.navtoggle.responsive nav {
+    margin: -10px;
+    padding-top: 22px;
+}
+.navtoggle.responsive li  {
+    display: block;
+    padding: 5px 0 5px 10px;
+    background-color: white;
+}
+.navtoggle.responsive li:last-child  {
+    padding-top: 5px;
+}
 /* Project layout */
 
 .project {
@@ -134,7 +158,7 @@ nav > ul > li > a {
     border-bottom: 1px solid black;
 }
 #project1 {
-    margin-top: 70px;
+    margin-top: 35px;
 }
 .project .name h3 {
     font-weight: 400;
@@ -252,35 +276,22 @@ Medium/Large devices (640px and larger)
     .header {
         all: unset;
     }
-    .hero {
-        all: unset;
-    }
     .hero .mobile {
         display: none;
     }
 
-    .hero {
-        display: inline-block;
-        height: fit-content;
-        padding: 0;
-        margin: 10px;
-        background-color: transparent;
+    .col-1 {
+        margin-top: 206px;
     }
     .name-link {
-        padding: 30px 15px 0 15px;
         font-weight: 300;
         font-size: 1.2em;
     }
-    .hero p {
-        margin: 15px;
-    }
 
     .nav {
-        height: 100px;
-        padding: 0 15px;
-        margin: 10px;
-        background-color: transparent;
-        border-bottom: unset;
+        padding-top: 20px;
+        border-top: 1px solid black;
+        width: 220px;
     }
     .nav ul {
         display: inline-flex;
@@ -291,6 +302,10 @@ Medium/Large devices (640px and larger)
     .nav ul li a {
         text-transform: none;
         font-style: italic;
+    }
+
+    .nav li:last-child {
+        display: none;
     }
 
     /* Index Project */

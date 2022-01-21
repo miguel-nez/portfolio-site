@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Miguel Núñez Núñez, miguel.nez@gmail.com">
-    <meta name="keywords" content="ux, ui, designer, cologne, köln, koeln, web, app, portfolio, case study, simplex, immigrant, germany, assistance, legal, bureaucracy, ted, vocabulary, english, learn">
+    <meta name="keywords"
+        content="ux, ui, designer, cologne, köln, koeln, web, app, portfolio, case study, simplex, immigrant, germany, assistance, legal, bureaucracy, ted, vocabulary, english, learn">
     <meta name="publisher" content="Miguel Núñez Núñez">
     <meta name="description" content="Portfolio and profile of Spanish UX Designer and frontend developer">
     <title>Nunez Nunez</title>
@@ -12,105 +13,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,100&display=swap"
+        rel="stylesheet">
+
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/b0e832d0de.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="work">
+<body id="work" class="background-work">
     <div class="row">
 
         <header class="header">
             <div class="col-1">
-    
+
                 <!-- Hero -->
                 <div id="hero">
                     <div class="header">
                         <div class="container mobile">
-                            <div class="navtoggle" id="myNavtoggle" class="mobile">
-                                <a href="index.html" class="myName">Núñez Núñez \/\/\ UXUI </a>  
+                            <div class="navtoggle mobile" id="myNavtoggle">
+                                <a href="index.html" class="myName">Núñez Núñez \/\/\ UXUI </a>
                                 <nav>
-                                    <ul>
+                                    <ul class="background-work">
                                         <li><a href="index.html">Work</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about.html">About me</a></li>
                                         <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
-                                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                                    class="fas fa-bars"></i></a></li>
                                     </ul>
-                                </nav> 
+                                </nav>
                             </div>
                         </div>
                         <!-- Desktop -->
                         <div class="desktop name-link">
-                        <a href="index.html">Núñez Núñez</a>
+                            <a href="index.html">Núñez Núñez</a>
                         </div>
-                        <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend development.</p>
+                        <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend
+                            development.</p>
                     </div>
                 </div>
-    
+
                 <!-- Navigation -->
                 <div id="nav" class="desktop">
                     <nav class="nav">
                         <ul>
                             <li><a href="index.html">Work</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.html">About me</a></li>
                             <li><a href="#footer">Contact</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                        class="fas fa-bars"></i></a></li>
                         </ul>
-                    </nav>            
+                    </nav>
                 </div>
             </div>
         </header>
-    
+
         <main class="col-2">
             <div class="container">
                 <div class="row">
-                <!-- Simplex -->
+
+                    <!-- Simplex -->
                     <div id="project1" class="project">
-                
-                            <div class="project-head">  <!-- Project title raw -->
-                                <div class="colp-sm-2 colp-md-1 name">
-                                    <h3>Inclusivity tool for migrants, 2021</h3>
-                                </div>
-                                <div class="colp-sm-2 colp-md-1 roles">
-                                    Research, IA, UX/UI, Interaction Design
-                                </div>
-                            </div>
 
-                            <div>  <!-- Project picture raw -->
-                                <picture class="project-preview">
-                                    <source srcset="img/expert/simplex_cover@2x.png" media="(max-width:767px)" width="100%">
-                                    <img src="img/expert/simplex_cover@3x.png" width="900px" alt="Simplex preview">
-                                </picture> 
-                            </div>
+                        <div>
+                            <!-- Picture raw -->
+                            <picture class="project-preview">
+                                <source srcset="img/expert/simplex_cover@2x.png" media="(max-width:767px)">
+                                <img src="img/expert/simplex_cover@3x.png" alt="Simplex preview">
+                            </picture>
+                        </div>
 
-                            <div class="row">  <!-- Project details raw -->
-                                <div class="colp-sm-2 colp-md-1 details">
-                                    <p class="project-text">Project: Respondive App<br>Software: Figma, Photoshop, Miro, Balsamiq, Final Cut Pro</p>
-                                    <p class="project-text">Immersion project within CareerFoundry UX Design Course. Simplex is an expert App aimed to improve the integration of immigrants in Germany by offering multilingual bureaucratic assistance and a trustworthy community.</p>
-                                    <div class="p-link">
-                                        <a href="simplex.html" class="button">Link to project</a>
-                                    </div>
-                                </div>
-                                <div class="colp-sm-2 colp-md-1 description">
-                                </div>
-                </div>
+                        <div class="project-head">
+                            <!-- Title raw -->
+                            <div class="colp-sm-2 colp-md-1 name">
+                                <h3>Inclusivity tool for migrants, 2021</h3>
+                            </div>
+                            <div class="colp-sm-2 colp-md-1 roles">
+                                <h3>Research, IA, UX/UI, Interaction Design</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Details raw -->
+                            <div class="colp-sm-2 colp-md-1 details">
+                                <p class="project-text">Immersion project within CareerFoundry UX Design Course. Simplex
+                                    is an expert App aimed to improve the integration of immigrants in Germany by
+                                    offering multilingual bureaucratic assistance and a trustworthy community.</p>
+                            </div>
+                            <div class="colp-sm-2 colp-md-1 p-link">
+                                <a href="simplex.html" class="button">Link to project</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <!-- TEDch me! -->
                 <div id="project2" class="project">
                     <div class="row">
+                        
+                        <!-- Picture raw -->
+                        <div>
+                            <picture class="project-preview">
+                                <source srcset="https://via.placeholder.com/767x400" media="(max-width:767px)">
+                                <img src="https://via.placeholder.com/1200x600" alt="TEDch Me! preview">
+                            </picture>
+                        </div>
 
                         <!-- Title row -->
                         <div class="project-head">
-                            <div class="colp-sm-2 colp-md-1 name"> 
+                            <div class="colp-sm-2 colp-md-1 name">
                                 <h3>Advanced English-vocabulary app</h3>
                             </div>
                             <div class="colp-sm-2 colp-md-1 roles">
@@ -118,22 +135,18 @@
                             </div>
                         </div>
 
-                        <!-- Picture raw -->
-                        <div>  
-                            <picture class="project-preview">
-                                <source srcset="https://via.placeholder.com/767x400" media="(max-width:767px)" width="100%">
-                                <img src="https://via.placeholder.com/1200x600" width="900px" alt="TEDch Me! preview">
-                            </picture>
-                        </div>
-                        
+
+
                         <!-- Details row -->
                         <div class="row">
-                            <div class="colp-sm-2 colp-md-1 details">
-                                <p>Project: Native App<br>Software: Sketch, InVision, Photoshop</p>
-                                <a href="#" class="button">Link to project</a>
-                            </div>
                             <div class="colp-sm-2 colp-md-1 description">
-                                <p class="project-text">Intro project within CareerFoundry UX Design Course. TEDch me! offers a different approach to an English vocabulary app for high level users by providing categorized TEDTalks for the discovering phase and online challanges for retaining.</p>
+                                <p class="project-text">Intro project within CareerFoundry UX Design Course. TEDch me!
+                                    offers a different approach to an English vocabulary app for high level users by
+                                    providing categorized TEDTalks for the discovering phase and online challanges for
+                                    retaining.</p>
+                            </div>
+                            <div class="colp-sm-2 colp-md-1 p-link">
+                                <a href="#" class="button">Link to project >></a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +158,8 @@
     <footer id="footer">
         <div class="container">
             <div class="contact">
-                <p>Let's work together >> <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query">miguel@gmail.com</a></p>
+                <p>Let's work together >> <a
+                        href="mailto:miguel.nez@gmail.com">miguel.nez@gmail.com</a></p>
             </div>
             <div class="copyright">
                 <p>©Miguel Núñez Núñez</p>
@@ -153,7 +167,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

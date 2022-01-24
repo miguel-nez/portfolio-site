@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Miguel Núñez Núñez, miguel.nez@gmail.com">
-    <meta name="keywords" content="ux, ui, designer, cologne, köln, koeln, web, app, portfolio, case study, simplex, immigrant, germany, assistance, legal, bureaucracy, ted, vocabulary, english, learn">
+    <meta name="keywords"
+        content="ux, ui, designer, cologne, köln, koeln, web, app, portfolio, case study, simplex, immigrant, germany, assistance, legal, bureaucracy, ted, vocabulary, english, learn">
     <meta name="publisher" content="Miguel Núñez Núñez">
-    <meta name="description" content="Case Study of Simplex, responsive app offering assistance to immigrants in Germany">
-    <title>Simplex</title>
-    
+    <meta name="description" content="Portfolio and profile of Spanish UX Designer and frontend developer">
+    <title>Nunez Nunez</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -19,267 +21,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
-    
-    <!-- Favicon -->
-    
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/b0e832d0de.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="simplex">
 
-    <header> <!-- Hero & Navigation section -->
-        <div class="header">
-            <div id="hero"> <!-- Hero -->
-                <div class="hero">
-                    <h3>
-                        <a href="index.html">/// Núñez Núñez /// 20212022 /// UXUI /// </a>
-                    </h3>
-                    <p class="hide-mobile">Product designer based in Cologne. I do UX, UI and basic frontend development.</p>
+    <header class="header">
+        <div class="col-1">
+
+            <!-- Hero -->
+            <div id="hero">
+                <div class="header">
+                    <div class="container mobile">
+                        <div class="navtoggle mobile" id="myNavtoggle">
+                            <a href="index.html" class="myName">Núñez Núñez \/\/\ UXUI </a>
+                            <nav>
+                                <ul class="background-work">
+                                    <li><a href="index.html">Work</a></li>
+                                    <li><a href="about.html">About me</a></li>
+                                    <li><a href="#footer" onclick="menuToggle()">Contact</a></li>
+                                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                                class="fas fa-bars"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Desktop -->
+                    <div class="desktop name-link">
+                        <a href="index.html">Núñez Núñez</a>
+                    </div>
+                    <p class="desktop">Product designer based in Cologne. I do UX, UI and basic frontend
+                        development.</p>
                 </div>
             </div>
-            <div id="nav"> <!-- Navigation -->
+
+            <!-- Navigation -->
+            <div id="nav" class="desktop">
                 <nav class="nav">
-                    <ul class="navigation">
+                    <ul>
                         <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About me</a></li>
                         <li><a href="#footer">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
                     </ul>
-                </nav>            
+                </nav>
             </div>
         </div>
     </header>
   
     <main id="main">
-        <div class="container">
-            <div> <!-- Wrapper -->
+        <div class="part-1">
+            <picture>
+                <source srcset="img/expert/case/case_1.png" media="(max-width:767px)">
+                <img src="img/expert/case/case_1@2.png" alt="simplex 1">
+            </picture>
+        </div>
+        <div class="part-1">
+            <picture>
+                <source srcset="img/expert/case/case_2.png" media="(max-width:767px)">
+                <img src="img/expert/case/case_2@2.png" alt="simplex 2">
+            </picture>
+        </div>
+        <div class="part-2">
+            <picture>
+                <source srcset="img/expert/case/case_3.png" media="(max-width:767px)">
+                <img src="img/expert/case/case_3@2.png" alt="simplex 3">
+            </picture>
+        </div>
+        <div class="part-3">
+            <picture>
+                <source srcset="img/expert/case/case_4.png" media="(max-width:767px)">
+                <img src="img/expert/case/case_4@2.png" alt="simplex 4">
+            </picture>
+        </div>
+        <div class="part-4">
 
-                <div> <!-- Overview -->
-                    <div> <!-- Gif/Image -->
-                        <picture>
-
-                        </picture>
-                    </div>
-                    <div> <!-- Title -->
-                        <h2>Simplex</h2>
-                    </div>
-                    <div> <!-- Slogan -->
-                        <h3>How to help non-German speakers overcome the hardships of settling in Germany</h3>
-                    </div>
-                    <div> <!-- Details -->
-                        <div> <!-- Column 1 -->
-                            <strong>Fields</strong>
-                            <div>UX Research, Design</div>
-                        </div>
-                        <div> <!-- Column 2 -->
-                            <strong>Platform</strong>
-                            <div>Responsive Web App</div>
-                        </div>
-                        <div> <!-- Column 3 -->
-                            <strong>Deliverables</strong>
-                            <div>UX, UI, Research, Ideation, Testing, Prototyping</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div> <!-- Problem statement-->
-                    <div> <!-- Title -->
-                        <h2>Problem</h2>
-                    </div>
-                    <div> <!-- Description-->
-                        <p>textextextextextextextextextex</p>
-                    </div>
-                    <div> <!-- News/Research/Quotes supporting statement-->
-                        <div>
-                            <picture>
-                            </picture>
-                        </div>
-                        <div>
-                            <picture>
-
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-
-                <div> <!-- Competive Analysis-->
-                    <div>
-                        <h2>Checking out the competence</h2>
-                    </div>
-                    <div>
-                        <p>textextextextextextextextextex</p>
-                    </div>
-                    <div>
-                        <picture>Chart</picture>
-                    </div>
-                </div>
-
-                <div> <!-- Interviews -->
-                    <div>
-                        <h2>Interviews</h2>
-                    </div>
-                    <div>
-                        <p>textextextextextextextextextex</p>
-                    </div>
-                    <div> <!-- Quotes -->
-                        <div>
-                            <picture>
-
-                            </picture>
-                        </div>
-                        <div>
-                            <picture>
-
-                            </picture>
-                        </div>
-                        <div>
-                            <picture>
-                                
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-
-                <div> <!-- Personas/User Journeys -->
-                    <div>
-                        <h2>User Journeys</h2>
-                    </div>
-                    <div>
-                        <p>textextextextextextextextextex1</p>
-                    </div>
-                    <div> 
-                        <div> <!-- Graphic/Image -->
-                            <picture>
-
-                            </picture>
-                        </div>
-                    </div>
-                    <div>
-                        <p>textextextextextextextextextex2</p>
-                    </div>
-                </div>
-
-                <div> <!-- Personal quote on project goal -->
-                    <div>textextextextextextextextextex</div>
-                </div>
-
-                <div> <!-- Sketches -->
-                    <div>
-                        <h2>First sketches</h2>
-                    </div>
-                    <div> <!-- Feature A -->
-                        <div>
-                            <p>textextextextextextextextextex</p>
-                        </div>
-                        <div>
-                            <div>
-                                <picture>
-
-                                </picture>
-                            </div>
-                            <div>
-                                <picture>
-
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                    <div> <!-- Feature B -->
-                        <div>
-                            <p>textextextextextextextextextex</p>
-                        </div>
-                        <div>
-                            <div>
-                                <picture>
-
-                                </picture>
-                            </div>
-                            <div>
-                                <picture>
-
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div> <!-- Testing -->
-                    <div>
-                        <h2>Testing on users</h2>
-                    </div>
-                    <div>
-                        <p>textextextextextextextextextex</p>
-                    </div>
-                    <div>
-                        <picture> <!-- Before -->
-
-                        </picture>
-                        <picture> <!-- After -->
-
-                        </picture>
-                    </div>
-                    <div>
-                        <picture> <!-- Before -->
-
-                        </picture>
-                        <picture> <!-- After -->
-
-                        </picture>
-                    </div>
-                </div>
-
-                <div> <!-- Final Prototype -->
-                    <div>
-                        <h2>Final Prototype</h2>
-                    </div>
-                    <div> <!-- General Insights -->
-                        <p>textextextextextextextextextex</p>
-                    </div>
-                    <div> <!-- Feature 1 -->
-                        <div>
-                            <p>textextextextextextextextextex</p>
-                        </div>
-                        <div>
-                            <picture>
-
-                            </picture>
-                        </div>
-                    </div>
-                    <div> <!-- Feature 2 -->
-                        <div>
-                            <p>textextextextextextextextextex</p>
-                        </div>
-                        <div>
-                            <picture>
-
-                            </picture>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#" class="button">Clickable Prototype</a>
-                    </div>
-                </div>
-
-                <div> <!-- Final Comment/Conclusions -->
-                    <div>
-                        <div>textextextextextextextextextex</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
     <footer id="footer">
         <div class="container">
-            <div class="footer-element">
-                <p>Let's work together  >></p>
+            <div class="contact">
+                <p>Let's work together >> <a
+                        href="mailto:miguel.nez@gmail.com">miguel.nez@gmail.com</a></p>
             </div>
-            <div class="footer-element">
-                <a href="mailto:miguel#####@gmail.com?subject=Web portfolio query">miguel@gmail.com</a>
-            </div>
-            <div class="footer-element">
+            <div class="copyright">
                 <p>©Miguel Núñez Núñez</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
